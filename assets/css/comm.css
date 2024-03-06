@@ -1,7 +1,9 @@
-body {
-  margin: 0;
+#horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400%;
 }
 
-canvas {
-  display: block;
+#horizontal > section {
+  width: 100%;
 }/*# sourceMappingURL=comm.css.map */

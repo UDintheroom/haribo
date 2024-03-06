@@ -1,15 +1,58 @@
-body {
-  margin: 0;
-}
-// html,
-// body {
-//   height: 100%;
-// 	overflow: hidden;
+// // reset
+// * {
+//   margin: 0;
+//   padding: 0;
+//   color: #333;
+//   font-size: 16px;
+//   box-sizing: border-box;
+//   list-style: none;
+//   text-decoration: none;
 // }
-canvas {
-  display: block;
+
+// // intro
+// canvas {
+//   display: block;
+//   height: 100vh !important;
+// }
+
+// // contents
+// .slide {
+//   width: 100%;
+//   height: 100vh;
+// }
+
+// .goldbaren {
+//   background: #FFCD4D;
+// }
+// .starmix {
+//   background: #5C9DFF;
+// }
+// .happycola {
+//   background: #FF6F66;
+// }
+// .worms {
+//   background: #AEDD7E;
+// }
+
+
+
+// // footer
+// footer {
+//   margin: 0 auto;
+//   padding: 74px 0;
+//   background: #D8232A;
+// }
+
+
+
+#parallax__cont {
+  // overflow: hidden;
 }
-
-
-// 
-
+#horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400%;
+}
+#horizontal > section {
+  width: 100%;
+}
