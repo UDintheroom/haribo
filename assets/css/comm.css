@@ -291,6 +291,25 @@ canvas {
   margin-top: 25px;
 }
 
+.packs {
+  display: flex;
+}
+.packs .pink .bg-img {
+  width: 350px;
+  height: 404px;
+  background: url(../../images/shape_pink.svg) center center/cover no-repeat;
+}
+.packs .yellow .bg-img {
+  width: 350px;
+  height: 404px;
+  background: url(../../images/shape_yellow.svg) center center/cover no-repeat;
+}
+.packs .green .bg-img {
+  width: 350px;
+  height: 404px;
+  background: url(../../images/shape_green.svg) center center/cover no-repeat;
+}
+
 footer {
   margin: 0 auto;
   padding: 74px 0;
