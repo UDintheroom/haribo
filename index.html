@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HARIBO - 아이들과 어른들을 위해 다채롭고 다양한 젤리</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/comm.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-    <script defer type="importmap">
-      {
-        "imports": {
-          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.58/build/runtime.js"
-        }
+  <script type="importmap">
+    {
+      "imports": {
+        "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.75/build/runtime.js"
       }
-    </script>
+    }
+  </script>
   <script defer type="module" src="./assets/js/comm.js"></script>
 </head>
 <body>
@@ -41,6 +43,7 @@
         <canvas id="canvas3d"></canvas>
       </section>
       <!-- // intro -->
+      
 
       <main id="horizontal">
         <section id="section2" class="parallax__item goldbaren">
@@ -54,7 +57,10 @@
                 파인애플에서부터 레몬 맛까지<br />
                 여섯 가지 알록달록한 골드베렌
               </p>
-              <a href="#" class="btn-more">더 알아보기</a>
+              <a href="#" class="btn-more">
+                더 알아보기
+                <div class="wave gold"></div>
+              </a>
             </div>
           </div>
           <div class="images">
@@ -75,7 +81,10 @@
                 마시멜로우, 하트, 우정 반지, 골드베렌까지<br />
                 은하계의 다양한 맛, 온 가족과 함께하세요
               </p>
-              <a href="#" class="btn-more">더 알아보기</a>
+              <a href="#" class="btn-more">
+                더 알아보기
+                <div class="wave star"></div>
+              </a>
             </div>
           </div>
           <div class="images">
@@ -96,7 +105,10 @@
                 깜찍하고 귀여운 콜라병 모양 젤리<br />
                 해피콜라로 맛있는 갈증을 해소해 보세요
               </p>
-              <a href="#" class="btn-more">더 알아보기</a>
+              <a href="#" class="btn-more">
+                더 알아보기
+                <div class="wave cola"></div>
+              </a>
             </div>
           </div>
           <div class="images">
@@ -118,7 +130,10 @@
                 하나로 두 가지 맛을 즐길 수 있어요<br />
                 어떤 맛이든 모든 젤리가 끝없이 들어가요
               </p>
-              <a href="#" class="btn-more">더 알아보기</a>
+              <a href="#" class="btn-more">
+                더 알아보기
+                <div class="wave worms"></div>
+              </a>
             </div>
           </div>
           <div class="images">

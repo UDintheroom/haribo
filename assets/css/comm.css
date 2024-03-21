@@ -102,6 +102,54 @@ canvas {
   border: 1px solid #fff;
   border-radius: 50px;
 }
+.text-wrap .btn-more {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.text-wrap .btn-more:hover {
+  color: #fff;
+  font-weight: 600;
+}
+.text-wrap .wave {
+  position: absolute;
+  z-index: -1;
+  bottom: 2%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-bottom: -301px;
+  transform-origin: 50% 48%;
+  border-radius: 35%;
+  transition-duration: 0.9s;
+  transition-property: margin-bottom;
+  transition-timing-function: ease;
+}
+.text-wrap .wave.gold {
+  background: #FF3030;
+}
+.text-wrap .wave.star {
+  background: #FFC32B;
+}
+.text-wrap .wave.cola {
+  background: #FFE176;
+}
+.text-wrap .wave.worms {
+  background: #FF4A4A;
+}
+.text-wrap .btn-more:hover .wave {
+  margin-bottom: -250px;
+  animation: rotate 2000ms infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
 
 .images .jelly {
   position: absolute;
@@ -109,7 +157,9 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 430px;
+  width: 22vw;
   height: 600px;
+  height: 30vw;
   z-index: 1;
 }
 
@@ -142,6 +192,7 @@ canvas {
   background: url(../../images/f-orange.png) center center/cover no-repeat;
   transform: rotate(-83deg);
   z-index: 2;
+  animation: 0.3s linear move-orange;
 }
 .goldbaren .images .berry {
   position: absolute;
@@ -162,6 +213,14 @@ canvas {
   transform: rotate(29deg);
 }
 
+@keyframes move-orange {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 23%;
+  }
+}
 .starmix .bg-txt {
   color: #FFC32B;
   letter-spacing: 15px;
@@ -180,8 +239,8 @@ canvas {
   position: absolute;
   bottom: 31%;
   right: 32%;
-  width: 182px;
-  height: 154px;
+  width: 148px;
+  height: 125px;
   background: url(../../images/f-ring.png) center center/cover no-repeat;
   transform: rotate(-18deg);
   z-index: 2;

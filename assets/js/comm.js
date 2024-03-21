@@ -1,3 +1,5 @@
+AOS.init(); 
+
 // main intro
 import { Application } from '@splinetool/runtime';
 
@@ -19,12 +21,20 @@ scrollTrigger: {
     end: () => "+=" + (horizontal.offsetWidth - innerWidth),
     pin: true,
     scrub: 1,
-    snap: {
-      snapTo: 1/(sections.length -1),
-      inertia: false,
-      duration: {min: 0.1, max: 0.1},
-    },
+    // snap: {
+    //   snapTo: 1/(sections.length -1),
+    //   inertia: false,
+    //   duration: {min: 0.1, max: 0.1},
+    // },
     invalidateOnRefresh: true,
     anticipatePin: 1
   }
 });
+
+//
+// window.addEventListener('scroll', function(){
+//   console.log(window.scrollY)
+//   $('.orange').css({'right':250});
+// });
+
+// gsap.to(".orange", {x: 100, duration: 1});
